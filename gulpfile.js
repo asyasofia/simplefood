@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const svgSprite = require('gulp-svg-sprite');
 const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -36,13 +37,14 @@ function svgSprites() {
   .pipe(cheerio({
     run: ($) => {
       $("[fill]").removeAttr("fill"); // очищаем цвет у иконок по умолчанию, чтобы можно было задать свой
-      $("[stroke]").removeAttr("stroke"); // очищаем, если есть лишние атрибуты строк
-      $("[style]").removeAttr("style"); // убираем внутренние стили для иконок
+      // $("[stroke]").removeAttr("stroke"); // очищаем, если есть лишние атрибуты строк
+      // $("[style]").removeAttr("style"); // убираем внутренние стили для иконок
     },
     parserOptions: {
       xmlMode: true
     },
   }))
+    .pipe(replace('&gt;', '>')) // боремся с заменой символа 
     .pipe(
       svgSprite({
         mode: {
@@ -78,6 +80,7 @@ function watching() {
 function scripts() {
   return src ([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'node_modules/mixitup/dist/mixitup.min.js',
     'app/js/main.js'
   ])

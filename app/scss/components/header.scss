@@ -1,0 +1,132 @@
+.header {
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 148px;
+  position: relative;
+  padding: 8px 146px 10px 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.17;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $orange-900;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 2px $orange-900;
+      border-radius: 5px;
+    }
+
+    &:active {
+      text-shadow: 2px 2px 5px $dark-opacity;
+    }
+  }
+}
+
+.user-nav {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $orange-500;
+      border-radius: 5px;
+      fill: $white;
+    }
+
+    &:focus {
+      background-color: rgba(255, 122, 80, 0.1);
+      box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+      border-radius: 5px;
+    }
+
+    &:active {
+      background-color: $orange-200;
+      border-radius: 5px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--search::before {
+      background-image: url('../images/icons/search.svg');
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--cart::before {
+      background-image: url('../images/icons/cart.svg');
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--cart::after {
+      content: '4';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $orange-900;
+      right: 3px;
+      top: 7px;
+      font-size: 10px;
+      line-height: 1.2;
+      color: $white;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    &--cart:hover::after {
+      background-color: $white;
+      color: $orange-500;
+    }
+  }
+}

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simplefood</title>
-  <link rel="icon" type="image/x-icon" href="../images/icons/favicon.png">
+  <title>Сервис доставки еды Simplefood</title>
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,7 +16,7 @@
     <div class="container">
       <nav class="menu" id="menu">
         <a class="logo" href="#body">
-          <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="39">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип Simplefood" width="200" height="39">
         </a>
         <ul class="menu__list">
           <li class="menu__item">
@@ -38,44 +38,46 @@
         </ul>
         <ul class="user-nav">
           <li class="user-nav__item">
-            <button class="user-nav__button user-nav__button--search" href="#" type="button">
+            <button class="user-nav__button user-nav__button--search" type="button">
             </button>
           </li>
           <li class="user-nav__item">
-            <button class="user-nav__button user-nav__button--cart" href="#" type="button">
+            <button class="user-nav__button user-nav__button--cart" type="button">
             </button>
           </li>
         </ul>
       </nav>
     </div>
-    </div>
   </header>
 
   <main class="main">
-    <section class="hero" style="background-image:url('../images/hero.png')">
+    <section class="hero">
       <div class="container">
-        <div class="hero__top">
-          <h1 class="hero__title">
-            Доставка
-            <span class="hero__subtitle">
-              За 15 минут
-            </span>
-          </h1>
-          <p class="hero__text">
-            Самый быстрый сервис доставки еды в вашем городе. Не уложимся в срок - доставка за наш счёт
-          </p>
-          <ul class="hero__bottom">
-            <li class="hero__bottom-item">
-              <button class="button hero__button" type="submit">
-                Заказать
-              </button>
-            </li>
-            <li class="hero__bottom-item">
-              <button class="hero__expand" type="button">
-                Подробнее
-              </button>
-            </li>
-          </ul>
+        <div class="hero__content" style="background-image:url('images/hero.png')">
+          <div class="hero__top">
+            <h1 class="sr-only">Сервис доставки еды Simplefood</h1>
+            <h2 class="hero__title">
+              Доставка
+              <span class="hero__subtitle">
+                За 15 минут
+              </span>
+            </h2>
+            <p class="hero__text">
+              Самый быстрый сервис доставки еды в вашем городе. Не уложимся в срок - доставка за наш счёт
+            </p>
+            <ul class="hero__bottom">
+              <li class="hero__bottom-item">
+                <a class="button button--big" href="#">
+                  Заказать
+                </a>
+              </li>
+              <li class="hero__bottom-item">
+                <a class="hero__link" href="#">
+                  Подробнее
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -87,158 +89,504 @@
         </h2>
         <ul class="popular__menu">
           <li class="popular__box">
-            <button class="popular__btn popular__btn--burger" data-filter=".category-1" type="button">
+            <button class="popular__btn popular__btn--burger" data-filter=".category-1" type="button"
+              style="background-image: url('images/icons/burger.svg');">
               Бургеры
             </button>
           </li>
           <li class="popular__box">
-            <button class="popular__btn popular__btn--pizza" data-filter=".category-2" type="button">
+            <button class="popular__btn popular__btn--pizza" data-filter=".category-2" type="button"
+              style="background-image: url('images/icons/pizza.svg');">
               Пицца
             </button>
           </li>
           <li class="popular__box">
-            <button class="popular__btn popular__btn--sandwich" data-filter=".category-3" type="button">
+            <button class="popular__btn popular__btn--sandwich" data-filter=".category-3" type="button"
+              style="background-image: url('images/icons/sandwich.svg');">
               Сендвичи
             </button>
           </li>
           <li class="popular__box">
-            <button class="popular__btn popular__btn--asian" data-filter=".category-4" type="button">
+            <button class="popular__btn popular__btn--asian" data-filter=".category-4" type="button"
+              style="background-image: url('images/icons/asian.svg');">
               Азиатская кухня
             </button>
           </li>
           <li class="popular__box">
-            <button class="popular__btn popular__btn--set" data-filter=".category-5" type="button">
+            <button class="popular__btn popular__btn--set" data-filter=".category-5" type="button"
+              style="background-image: url('images/icons/dish.svg');">
               Cеты
             </button>
           </li>
         </ul>
 
-        <div class="popular__content">
-          <article class="article mix category-1">
-            <img class="article__img" src="images/articles/article1.jpg" alt="Чизбургер с листьями салата" width="140"
-              height="140">
-            <p class="article__desc">
-              Чизбургер с листьями салата
-            </p>
-            <p class="article__price">
-              160 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-1">
-            <img class="article__img" src="images/articles/article2.jpg" alt="Бифбургер">
-            <p class="article__desc">
-              Бифбургер
-            </p>
-            <p class="article__price">
-              190 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-1">
-            <img class="article__img" src="images/articles/article3.jpg" alt="Королевский чизбургер">
-            <p class="article__desc">
-              Королевский чизбургер
-            </p>
-            <p class="article__price">
-              260 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-2">
-            <img class="article__img" src="images/articles/article4.jpg" alt="Черный гамбургер">
-            <p class="article__desc">
-              Черный гамбургер
-            </p>
-            <p class="article__price">
-              199 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-2">
-            <img class="article__img" src="images/articles/article5.jpg" alt="Чикен бургер">
-            <p class="article__desc">
-              Чикен бургер
-            </p>
-            <p class="article__price">
-              180 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-3">
-            <img class="article__img" src="images/articles/article6.jpg" alt="Чизбургер с листьями салата">
-            <p class="article__desc">
-              Чизбургер с листьями салата
-            </p>
-            <p class="article__price">
-              160 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-3">
-            <img class="article__img" src="images/articles/article7.jpg" alt="Бифбургер">
-            <p class="article__desc">
-              Бифбургер
-            </p>
-            <p class="article__price">
-              190 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-4">
-            <img class="article__img" src="images/articles/article8.jpg" alt="Королевский чизбургер">
-            <p class="article__desc">
-              Королевский чизбургер
-            </p>
-            <p class="article__price">
-              260 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-5">
-            <img class="article__img" src="images/articles/article9.jpg" alt="Черный гамбургер">
-            <p class="article__desc">
-              Черный гамбургер
-            </p>
-            <p class="article__price">
-              199 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-          <article class="article mix category-5">
-            <img class="article__img" src="images/articles/article10.jpg" alt="Чикен бургер">
-            <p class="article__desc">
-              Чикен бургер
-            </p>
-            <p class="article__price">
-              180 руб.
-            </p>
-            <button class="button article__button">
-              В корзину
-            </button>
-          </article>
-        </div>
-        <button class="popular__button" type="button">
+        <ul class="popular__content">
+          <li class="popular__item">
+            <article class="article-product mix category-1">
+              <img class="article-product__img" src="images/articles/article1.jpg" alt="Чизбургер с листьями салата"
+                width="140" height="140">
+              <h3 class="article-product__title">
+                Чизбургер с листьями салата
+              </h3>
+              <span class="article-product__price">
+                160
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="article-product mix category-1">
+              <img class="article-product__img" src="images/articles/article2.jpg" width="140" height="140"
+                alt="Бифбургер">
+              <h3 class="article-product__title">
+                Бифбургер
+              </h3>
+              <span class="article-product__price">
+                190
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="article-product mix category-1">
+              <img class="article-product__img" src="images/articles/article3.jpg" width="140" height="140"
+                alt="Королевский чизбургер">
+              <h3 class="article-product__title">
+                Королевский чизбургер
+              </h3>
+              <span class="article-product__price">
+                260
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="article-product mix category-2">
+              <img class="article-product__img" src="images/articles/article4.jpg" width="140" height="140"
+                alt="Черный гамбургер">
+              <h3 class="article-product__title">
+                Черный гамбургер
+              </h3>
+              <span class="article-product__price">
+                199
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li>
+            <article class="article-product mix category-2">
+              <img class="article-product__img" src="images/articles/article5.jpg" width="140" height="140"
+                alt="Чикен бургер">
+              <h3 class="article-product__title">
+                Чикен бургер
+              </h3>
+              <span class="article-product__price">
+                180
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="article-product mix category-3">
+              <img class="article-product__img" src="images/articles/article6.jpg" width="140" height="140"
+                alt="Чизбургер с листьями салата">
+              <h3 class="article-product__title">
+                Чизбургер с листьями салата
+              </h3>
+              <span class="article-product__price">
+                160
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="article-product mix category-3">
+              <img class="article-product__img" src="images/articles/article7.jpg" width="140" height="140"
+                alt="Бифбургер">
+              <h3 class="article-product__title">
+                Бифбургер
+              </h3>
+              <span class="article-product__price">
+                190
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="article-product mix category-4">
+              <img class="article-product__img" src="images/articles/article8.jpg" width="140" height="140"
+                alt="Королевский чизбургер">
+              <h3 class="article-product__title">
+                Королевский чизбургер
+              </h3>
+              <span class="article-product__price">
+                260
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="article-product mix category-5">
+              <img class="article-product__img" src="images/articles/article9.jpg" width="140" height="140"
+                alt="Черный гамбургер">
+              <h3 class="article-product__title">
+                Черный гамбургер
+              </h3>
+              <span class="article-product__price">
+                199
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="article-product mix category-5">
+              <img class="article-product__img" src="images/articles/article10.jpg" width="140" height="140"
+                alt="Чикен бургер">
+              <h3 class="article-product__title">
+                Чикен бургер
+              </h3>
+              <span class="article-product__price">
+                180
+                <span class="currency">
+                  руб.
+                </span>
+              </span>
+              <button class="button button--small" type="button">
+                В корзину
+              </button>
+            </article>
+          </li>
+        </ul>
+        <a class="popular__link" href="#">
           Показать еще
+        </a>
+      </div>
+    </section>
+
+    <section class="promo" style="background-image: url('images/promo.png');">
+      <div class="promo__content">
+        <h2 class="title promo__title">
+          Оставайтесь дома,
+          <span class="title promo__subtitle">
+            а мы позаботимся о еде
+          </span>
+        </h2>
+        <p class="promo__text">
+          У нас есть вкусная еда и мы готовы доставить её к вам домой! Воспользуйтесь нашей доставкой прямо сейчас и
+          получите скидку!
+        </p>
+        <ul class="promo__list">
+          <li class="promo__item" style="background-image:url(images/icons/delivery.svg);">
+            Быстрая доставка за 15 минут
+          </li>
+          <li class="promo__item" style="background-image:url(images/icons/courier.svg);">
+            Вежливые курьеры
+          </li>
+          <li class="promo__item" style="background-image:url(images/icons/network.svg);">
+            Более 500 заведений
+          </li>
+        </ul>
+        <button class="button promo__btn button--big " type="button">
+          Подробнее
         </button>
+      </div>
+    </section>
+
+    <section class="restaurants">
+      <div class="container">
+        <h2 class="title restaurants__title">
+          Лучшие рестораны
+        </h2>
+        <ul class="restaurants__content">
+          <li class="restaurants__item">
+            <article class="article-restaurant">
+              <img class="article-restaurant__img" src="images/restr-1.jpg" width="370" height="300" alt="Blaze Pizza">
+              <h3 class="article-restaurant__title">
+                Blaze Pizza
+              </h3>
+              <div class="article-restaurant__inner">
+                <span class="article-restaurant__timing">
+                  11:00 - 22:00
+                </span>
+                <button class="button article-restaurant__btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                  </svg>
+                  <span class="sr-only">Перейти на страницу ресторана</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="restaurants__item">
+            <article class="article-restaurant">
+              <img class="article-restaurant__img" src="images/restr-2.jpg" width="370" height="300" alt="Pizza Runcho">
+              <h3 class="article-restaurant__title">
+                Pizza Runcho
+              </h3>
+              <div class="article-restaurant__inner">
+                <span class="article-restaurant__timing">
+                  12:00 - 21:00
+                </span>
+                <button class="button article-restaurant__btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                  </svg>
+                  <span class="sr-only">Перейти на страницу ресторана</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="restaurants__item">
+            <article class="article-restaurant">
+              <img class="article-restaurant__img" src="images/restr-3.jpg" width="370" height="300" alt="Pizza Hut">
+              <h3 class="article-restaurant__title">
+                Pizza Hut
+              </h3>
+              <div class="article-restaurant__inner">
+                <span class="article-restaurant__timing">
+                  11:00 - 22:00
+                </span>
+                <button class="button article-restaurant__btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                  </svg>
+                  <span class="sr-only">Перейти на страницу ресторана</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="restaurants__item">
+            <article class="article-restaurant">
+              <img class="article-restaurant__img" src="images/restr-4.jpg" width="370" height="300" alt="McDonald's">
+              <h3 class="article-restaurant__title">
+                McDonald's
+              </h3>
+              <div class="article-restaurant__inner">
+                <span class="article-restaurant__timing">
+                  06:00 - 23:00
+                </span>
+                <button class="button article-restaurant__btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                  </svg>
+                  <span class="sr-only">Перейти на страницу ресторана</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="restaurants__item">
+            <article class="article-restaurant">
+              <img class="article-restaurant__img" src="images/restr-5.jpg" width="370" height="300" alt="KFC">
+              <h3 class="article-restaurant__title">
+                KFC
+              </h3>
+              <div class="article-restaurant__inner">
+                <span class="article-restaurant__timing">
+                  06:00 - 23:30
+                </span>
+                <button class="button article-restaurant__btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                  </svg>
+                  <span class="sr-only">Перейти на страницу ресторана</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="restaurants__item">
+            <article class="article-restaurant">
+              <img class="article-restaurant__img" src="images/restr-6.jpg" width="370" height="300" alt="Star Burgers">
+              <h3 class="article-restaurant__title">
+                Star Burgers
+              </h3>
+              <div class="article-restaurant__inner">
+                <span class="article-restaurant__timing">
+                  09:00 - 21:00
+                </span>
+                <button class="button article-restaurant__btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                  </svg>
+                  <span class="sr-only">Перейти на страницу ресторана</span>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__container">
+        <h2 class="title reviews__title">
+          Отзывы клиентов
+        </h2>
+        <ul class="slider-reviews">
+          <li class="slider-reviews__item">
+            <div class="slider-reviews__inner">
+              <img class="slider-reviews__img" src="images/reviews-1.jpg" width="300" height="300" alt="Дарья">
+              <div class="slider-reviews__content">
+                <blockquote class="blockquote">
+                  <p class="blockquote__txt">
+                    SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
+                    приложение.
+                    Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку
+                    -
+                    однозначно рекомендую!
+                  </p>
+                  <span class="blockquote__author">
+                    Дарья
+                  </span>
+                  <span class="blockquote__profession">
+                    Ценитель вкусной еды
+                  </span>
+                </blockquote>
+              </div>
+            </div>
+          </li>
+          <li class="slider-reviews__item">
+            <div class="slider-reviews__inner">
+              <img class="slider-reviews__img" src="images/reviews-1.jpg" width="300" height="300" alt="Дарья">
+              <div class="slider-reviews__content">
+                <blockquote class="blockquote">
+                  <p class="blockquote__txt">
+                    SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
+                    приложение.
+                    Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку
+                    -
+                    однозначно рекомендую!
+                  </p>
+                  <span class="blockquote__author">
+                    Дарья
+                  </span>
+                  <span class="blockquote__profession">
+                    Ценитель вкусной еды
+                  </span>
+                </blockquote>
+              </div>
+            </div>
+          </li>
+          <li class="slider-reviews__item">
+            <div class="slider-reviews__inner">
+              <img class="slider-reviews__img" src="images/reviews-1.jpg" width="300" height="300" alt="Дарья">
+              <div class="slider-reviews__content">
+                <blockquote class="blockquote">
+                  <p class="blockquote__txt">
+                    SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
+                    приложение.
+                    Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку
+                    -
+                    однозначно рекомендую!
+                  </p>
+                  <span class="blockquote__author">
+                    Дарья
+                  </span>
+                  <span class="blockquote__profession">
+                    Ценитель вкусной еды
+                  </span>
+                </blockquote>
+              </div>
+            </div>
+          </li>
+          <li class="slider-reviews__item">
+            <div class="slider-reviews__inner">
+              <img class="slider-reviews__img" src="images/reviews-1.jpg" width="300" height="300" alt="Дарья">
+              <div class="slider-reviews__content">
+                <blockquote class="blockquote">
+                  <p class="blockquote__txt">
+                    SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и
+                    приложение.
+                    Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку
+                    -
+                    однозначно рекомендую!
+                  </p>
+                  <span class="blockquote__author">
+                    Дарья
+                  </span>
+                  <span class="blockquote__profession">
+                    Ценитель вкусной еды
+                  </span>
+                </blockquote>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="application">
+      <div class="container">
+        <div class="application__content" style="background-image: url('images/app.jpg');">
+          <div class="application__inner">
+            <h2 class="title application__title">
+              Скачайте мобильное приложение
+            </h2>
+            <p class="application__txt">
+              Рестораны, которые вы любите - в ваших руках. Устанавливайте приложение и заказывайте еду в любом
+              удобном
+              месте.
+            </p>
+            <ul class="application__box">
+              <li class="application__items">
+                <a class="application__link application__link--apple" href="#"
+                  style="background-image: url('images/icons/appstore.png');">
+                  <span class="sr-only">Перейти в магазин AppStore</span>
+                </a>
+              </li>
+              <li class="application__items">
+                <a class="application__link application__link--google" href="#"
+                  style="background-image: url('images/icons/googleplay.png');">
+                  <span class="sr-only">Перейти в магазин GooglePlay</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -246,18 +594,18 @@
 
   <footer class="footer" id="footer">
     <div class="container">
-
       <div class="footer__top">
         <div class="footer__subscribe">
-          <a class="logo" href="#" id="body">
-            <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="39">
+          <a class="logo footer__logo" href="#" id="body">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип Simplefood" width="200" height="39">
           </a>
-          <form class="form" action="#">
-            <label class="form__label">
-              <input class="form__input" type="text" placeholder="Ваш email" name="email" required>
+          <form class="form-subscribe" action="#">
+            <label class="form-subscribe__label">
+              <span class="sr-only">Ваш email</span>
+              <input class="form-subscribe__input" type="email" placeholder="Ваш email" name="email" required>
             </label>
-            <button class="button form__button" type="submit"
-              style="background-image: url('images/icons/telegram.svg');">
+            <button class="button form-subscribe__button" type="submit"
+              style="background-image: url('images/sprite.svg#telegram');">
               Подписаться
             </button>
           </form>
@@ -346,28 +694,31 @@
           </ul>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
+              <a class="social__link social__link--facebook" href="#"
+                style="background-image: url('images/sprite.svg#facebook');">
                 <span class="sr-only">Перейти на страницу фейсбук</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
+              <a class="social__link social__link--twitter" href="#"
+                style="background-image: url('images/sprite.svg#twitter');">
                 <span class="sr-only">Перейти на страницу твиттер</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href=" #">
+              <a class="social__link social__link--instagram" href="#"
+                style="background-image: url('images/sprite.svg#instagram');">
                 <span class="sr-only">Перейти на страницу инстаграм</span>
               </a>
             </li>
           </ul>
         </address>
       </div>
-      <div class="footer__bottom">
-        <a class="trademark" href="#">
-          © 2021 Simple Food
-        </a>
-      </div>
+    </div>
+    <div class="footer__bottom">
+      <a class="trademark" href="#">
+        © 2021 Simple Food
+      </a>
     </div>
   </footer>
 
